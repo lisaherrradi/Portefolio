@@ -1,0 +1,86 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 3rem;
+	color: #800080; /* Purple */
+	margin-top: 20px;
+}
+
+nav {
+	background-color: #5BCEFA; /* Blue */
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav li {
+	display: inline;
+	margin-right: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: grey; /* White */
+	font-size: 1.2rem;
+	font-weight: bold;
+	transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+nav a:hover {
+	color: #800080; /* Purple on hover */
+}
+
+section {
+	text-align: center;
+	margin-top: 20px;
+}
+
+h2 {
+	font-size: 2.5rem;
+	color: #800080; /* Purple */
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+li {
+	background-color: #fff; /* White */
+	border: 2px solid #800080; /* Purple */
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	color: #800080; /* Purple */
+	transition: transform 0.3s ease-in-out;
+}
+
+li:hover {
+	transform: scale(1.1);
+}
+
+a {
+	color: #800080; /* Purple */
+	text-decoration: none;
+	transition: text-decoration 0.3s ease-in-out; /* Smooth text-decoration transition */
+}
+
+a:hover {
+	text-decoration: underline;
+}
