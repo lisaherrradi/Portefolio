@@ -1,0 +1,23 @@
+pipeline {
+    agent VPS-ORCL1
+    options {
+        // Timeout counter starts AFTER agent is allocated
+        timeout(time: 1, unit: 'MINUTES')
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+                sh 'podman build -t lisaherradi-portefolio-apache:latest .'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+                sh 'podman compose down'
+                sh 'podman compose up -d'
+            }
+        }
+    }
+}
