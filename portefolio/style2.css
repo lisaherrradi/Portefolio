@@ -201,6 +201,9 @@ section ul li:hover img {
 }
 
 .slider {
+
+  width: 80%;
+  margin-left: 9%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -210,7 +213,7 @@ section ul li:hover img {
 }
 
 .card {
-  width: 30%;
+  width: 45%;
   margin-bottom: 20px;
   padding: 20px;
   background-color: #52577a;
