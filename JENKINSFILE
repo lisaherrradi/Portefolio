@@ -15,8 +15,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh 'podman compose down'
-                sh 'podman compose up -d'
+                sh 'podman-compose down'
+                sh 'podman-compose up -d'
             }
         }
     }
