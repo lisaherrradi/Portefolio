@@ -1,5 +1,5 @@
 pipeline {
-    agent VPS-ORCL1
+    agent {label "xabigoity.fr"}
     options {
         // Timeout counter starts AFTER agent is allocated
         timeout(time: 1, unit: 'MINUTES')
