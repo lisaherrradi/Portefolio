@@ -1,0 +1,15 @@
+version: '3'
+
+networks:
+  proxy:
+    external: true
+
+services:
+  lisaherradi:
+    image: lisaherradi-portefolio-apache:latest
+    ports:
+      - "83:80"
+    restart: unless-stopped
+    networks:
+      proxy:
+        ipv4_address: 10.89.1.7
